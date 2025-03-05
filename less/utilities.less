@@ -1,0 +1,41 @@
+.fullWidthImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.shadow-sm {
+    box-shadow: 1px 1px 3px @primary-color-super-dark;
+}
+  
+.shadow-md {
+    box-shadow: 3px 3px 5px @primary-color-super-dark;
+}
+
+.shadow-lg {
+    box-shadow: 5px 5px 9px @primary-color-super-dark;
+}
+  
+.sparkle-animation() {
+    @keyframes sparkle {
+      0%, 100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+}
+  
+.blink-animation() {
+ @keyframes blink {
+      0%, 100% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+}

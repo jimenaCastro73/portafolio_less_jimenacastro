@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Jimena Castro</title>
+    <link rel="stylesheet" href="less/main.less" />
+    <script src="src/menu-toggle.js"></script>
+    <script defer src="src/form-validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    {{> header}}
+
+    <main>
+        <section id="inicio" class="hero grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-6">
+                        <div class="hero-text">
+                            <h1>Transformando ideas en experiencias digitales</h1>
+                            <p class="hero-description">Desarrolladora web especializada en crear soluciones innovadoras
+                                y centradas en el usuario.</p>
+                            <div class="hero-cta">
+                                <a href="#proyectos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver
+                                    proyectos</a>
+                                <a href="#contacto" class="btn btn-secondary"><i class="fas fa-paper-plane"></i>
+                                    Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="hero-image">
+                            <img src="imgs/jimena-foto1.jpg" alt="Jimena Castro - Desarrolladora Web">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-12 col-lg-12">
+                        <div class="about-content">
+                            <h2>Sobre Mí</h2>
+                            <div class="about-text">
+                                <p>Soy una desarrolladora web apasionada por crear experiencias digitales atractivas y
+                                    funcionales. Actualmente estoy enfocada en el desarrollo frontend y siempre estoy
+                                    aprendiendo nuevas tecnologías.</p>
+                                <p>Mi objetivo es combinar diseño y funcionalidad para crear sitios web que no solo sean
+                                    visualmente atractivos, sino también intuitivos y accesibles para todos los usuarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-12 col-lg-12">
+                        <h2>Proyectos</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="imgs/proyecto1.jpg" alt="Proyecto 1">
+                            </div>
+                            <div class="project-content">
+                                <h3>Sistema Técnicos y Asociados</h3>
+                                <p>Desarrollé en equipo un sistema de información para automatizar las tareas de la
+                                    Empresa Técnicos y Asociados, una empresa que ofrece servicios del rubro de la
+                                    electricidad.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C#</span>
+                                    <span class="tag">SQL Server</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="imgs/proyecto2.jpg" alt="Proyecto 2">
+                            </div>
+                            <div class="project-content">
+                                <h3>Tecnitours</h3>
+                                <p>Desarrollé en equipo el sitio web para una agencia de viajes, se especializa en
+                                    ofrecer paquetes para viajar localmente como internacionalmente.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="https://daniel-gomez03.github.io/tecnitours/" class="project-link" target="_blank">Ver
+                                    Sitio Web</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="imgs/proyecto3.jpg" alt="Proyecto 3">
+                            </div>
+                            <div class="project-content">
+                                <h3>Mujeres en STEM</h3>
+                                <p>Desarrollé un Sitio Web dedicado a visibilizar la importancia de la participación de mujeres y niñas en la ciencia</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Bootstrap 5.3.3</span>
+                                </div>
+                                <a href="https://jimenacastro73.github.io/Mujeres_en_STEM/" class="project-link" target="_blank">Ver Sitio Web</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-form grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-12 col-lg-6">
+                        <div class="contact-info">
+                            <h2>Información de Contacto</h2>
+                            <p>Si tienes alguna pregunta o estás interesado en trabajar juntos, puedes contactarme a través de:</p>
+                            <ul class="contact-list">
+                                <li><i class="fas fa-envelope"></i> jimenacastro0305@gmail.com</li>
+                                <li><i class="fab fa-github"></i> github.com/jimenaCastro73</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 col-lg-6">
+                        <div class="formulario">
+                            <h2>¿Tienes algo en mente?</h2>
+                            <p class="form-subtitulo">¡Trabajemos Juntos!</p>
+                            <form class="contact" method="GET">
+                                <div class="form-group">
+                                    <div class="input-control">
+                                        <label for="name">Nombre:</label>
+                                        <input id="name" name="username" type="text" placeholder="Ingresa tu nombre">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="email">Correo electrónico:</label>
+                                        <input id="email" name="email" type="email" placeholder="tucorreo@email.com">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="message">Mensaje:</label>
+                                        <textarea id="message" name="message"
+                                            placeholder="Cuéntame los detalles de tu idea"></textarea>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-button">
+                                    <span>Enviar mensaje</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {{> footer}}
+
+</body>
+
+</html>

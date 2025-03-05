@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+// Colores principales
+@primary-color: #0F172A;
+@primary-color-super-dark: darken(@primary-color, 50%);
+@primary-color-dark: darken(@primary-color, 10%);
+@primary-color-light: lighten(@primary-color, 10%);
+@primary-color-super-light: lighten(@primary-color, 30%);
+
+// Colores secundarios
+@secondary-color: #f2e8e9;
+@secondary-color-super-dark: darken(@secondary-color, 50%);
+@secondary-color-dark: darken(@secondary-color, 10%);
+@secondary-color-light: lighten(@secondary-color, 10%);
+@secondary-color-super-light: lighten(@secondary-color, 30%);
+
+@accent-color: #747CFF;
+@accent-color-secondary: #4F6040;
+@accent-color-dark: #1f67a8;
+@text-color-primary: #2f2d25;
+@text-color-light: #CBD5E1;
+
+@font-family: 'Nunito', Arial, sans-serif;
+
+@gradient-primary: linear-gradient(135deg, @accent-color, @accent-color-secondary);
+@gradient-hero-purple: linear-gradient(180deg, @accent-color 0%, rgba(116, 124, 255, 0) 100%);
+@gradient-hero-green: linear-gradient(180deg, @accent-color-secondary 0%, rgba(79, 96, 64, 0) 100%);
+
+@transition-default: all 0.3s ease;
+
+// Breakpoints
+#breaks{
+    tablet: 768px;
+    desktop: 1025px;
+    wide: 2300px;
+}
+
+#breaks-prefix{
+    tablet: md-;
+    desktop: lg-;
+    wide: xl-;
+}
+
+
+

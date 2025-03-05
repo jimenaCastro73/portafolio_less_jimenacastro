@@ -1,0 +1,40 @@
+.generarColumns(@prefijo, @columnas, @iteracion: 1) when (@iteracion =< @columnas) {
+    @selector-columna: ~'.col-@{prefijo}@{iteracion}';
+    @selector-offset: ~'.offset-@{prefijo}@{iteracion}';
+    @ancho: (100% / @columnas * @iteracion);
+
+    @{selector-columna} {
+        flex: 0 0 @ancho;
+    }
+
+    @{selector-offset} {
+        margin-left: @ancho;
+    }
+
+    .generarColumns(@prefijo, @columnas, (@iteracion + 1));
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        flex: 1 100%;
+        flex-wrap: wrap;
+
+        .generarColumns('', 6);
+
+        @media (min-width: #breaks[tablet]) {
+            .generarColumns(#breaks-prefix[tablet], 12);
+        }
+
+        @media (min-width: #breaks[desktop]) {
+            .generarColumns(#breaks-prefix[desktop], 12);
+        }
+
+        @media (min-width: #breaks[wide]) {
+            .generarColumns(#breaks-prefix[wide], 12);
+        }
+    }
+}
