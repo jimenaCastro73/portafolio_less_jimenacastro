@@ -1,11 +1,11 @@
-import path, {resolve} from 'node:path'
+import path, { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import * as glob from 'glob'
 import htmlPurge from 'vite-plugin-purgecss'
 import handlebars from 'vite-plugin-handlebars'
-import {ViteMinifyPlugin} from 'vite-plugin-minify'
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
-const obtenerEntradas = ()=>{
+const obtenerEntradas = () => {
     return Object.fromEntries(
         [
             ...glob.sync(
@@ -39,7 +39,7 @@ export default defineConfig({
     plugins: [
         handlebars({
             partialDirectory: resolve(__dirname, 'partials'),
-            context : (pagePath)=> {
+            context: (pagePath) => {
                 return {}
             }
         }),
